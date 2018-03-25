@@ -27,3 +27,15 @@ sliderControlRight.addEventListener("click", function(e){
 sliderControlRight.addEventListener("click", function(e){
   e.preventDefault();
 });
+
+// gallery img hover
+
+// let galeryItems = document.getElementsByClassName('gallery__item');
+//
+// for (item of galeryItems) {
+//   item.addEventListener('mouseover', function(e){
+//     let hoverBlock = e.target.lastChild;
+//     console.log(e.target)
+//     hoverBlock.classList.add('hover-up');
+//   })
+// }

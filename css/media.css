@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+  .service-list__item{
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe__text h4,
+	.subscribe__text p,
+  .subscribe__button,
+  .item__text h4,
+  .item__text p
+  {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .subscribe__button{
+    margin-top: 10px;
+  }
+  .item__img{
+    margin-right: 0;
+  }
+  .contact__item{
+    margin-top: 10px;
+
+  }
+}

@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test markup</title>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -42,10 +42,10 @@
       </div>
 
       <a href="" class="slider__control control_right" id="sliderControlLeft">
-        <i class="fas fa-angle-right fa-2x"></i>
+        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
       </a>
       <a href="" class="slider__control control_left" id="sliderControlRight">
-        <i class="fas fa-angle-left fa-2x"></i>
+        <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
       </a>
     </div>
   </header>
@@ -54,28 +54,32 @@
       <div class="container">
         <h3>Donec tristique rutrum</h3>
         <h2>About company</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor lorem congue, in tincidunt leo pharetra. Nulla facilisi. Mauris sed justo consequat, pretium sem in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt. Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel faucibus leo, ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas iaculis massa placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu, ultricies facilisis purus.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor lorem congue, in tincidunt leo pharetra. Nulla facilisi.
+          Mauris sed justo consequat, pretium sem in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt. Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel faucibus leo,
+          ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas
+          iaculis massa placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu, ultricies facilisis purus.
         </p>
         <p>
-          Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt eros. Cras eget tempus nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis, viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi nisi ultrices elit, laoreet faucibus massa est a massa.
+          Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt
+          eros. Cras eget tempus nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis, viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi nisi ultrices elit, laoreet
+          faucibus massa est a massa.
         </p>
         <button class="button button_dark">read more</button>
       </div>
     </section>
     <section class="section_grey">
 
-          <h3>Lorem ipsum</h3>
-          <h2>our services</h2>
-          <div class="service-list">
-            <div class="container">
-              <div class="row">
+      <h3>Lorem ipsum</h3>
+      <h2>our services</h2>
+      <div class="service-list">
+        <div class="container">
+          <div class="row">
             <div class="service-list__item col-md-4 col-sm-6 col-12">
               <div class="item__img"></div>
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -84,8 +88,7 @@
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -94,8 +97,7 @@
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -104,8 +106,7 @@
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -114,8 +115,7 @@
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -124,8 +124,7 @@
               <div class="item__text">
                 <h4>some service</h4>
                 <p>
-                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu.
-                  Pellentesque rutrum tellus ut mauris scelerisque
+                  Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque
                 </p>
               </div>
             </div>
@@ -136,13 +135,143 @@
       </div>
     </section>
     <section class="section_dark-grey">
-      <div class="container"></div>
+      <div class="subscribe">
+        <div class="container">
+        <div class="row">
+            <div class="subscribe__text col-md-6 col-sm-6 col-12">
+            <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+          </h4>
+            <p>
+              Cras ac tortor hendrerit, tristique elit sed, placerat justo.
+            </p>
+          </div>
+          <div class="subscribe__button  col-md-6 col-sm-6 col-12">
+            <button type="button" name="button" class="button button_light button_long">
+            subscribe now
+          </button>
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
     <section class="section_light">
-      <div class="container"></div>
+
+      <h3>Donec tristique</h3>
+
+      <h2>our works</h2>
+
+      <div class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+
+              <img src="images/work-1.jpg" class="gallery__img"alt="">
+
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+              <img src="images/work-2.jpg" class="gallery__img" alt="">
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+              <img src="images/work-3.jpg" class="gallery__img" alt="">
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+              <img src="images/work-4.jpg" class="gallery__img" alt="">
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+              <img src="images/work-5.jpg" class="gallery__img" alt="">
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__item col-md-4 col-sm-6 col-12">
+              <img src="images/work-6.jpg" class="gallery__img" alt="">
+              <div class="gallery__hover">
+                <div class="hover__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="hover__footer">
+                  <h4>Ut pretium leo vel</h4>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section_grey">
-      <div class="container"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <h3>Donec tristique</h3>
+
+            <h2>contact</h2>
+          </div>
+          <div class="contact__item col-md-3 col-sm-4">
+            <a href="" class="icon icon_large icon_orange">
+              <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+            </a>
+            <p>
+              2619 Old Fort RdFort Washington, PA 19034
+            </p>
+          </div>
+          <div class="contact__item col-md-3 col-sm-4">
+            <a href="" class="icon icon_large icon_orange">
+              <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+            </a>
+            <p>610-516-0418</p>
+          </div>
+          <div class="contact__item  col-md-3 col-sm-4">
+            <a href="" class="icon icon_large icon_orange">
+
+            </a>
+            <p>layout.02@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="map-wrap"></section>
   </main>

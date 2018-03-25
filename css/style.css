@@ -39,7 +39,7 @@ html, body, header, main, section, footer {
 }
 
 body, a {
-	font-family: OpenSans-Regular;
+	font-family: "OpenSans-Regular", Arial, sans-serif;
 	font-size: 16px;
 	color: #616161;
 }
@@ -48,7 +48,7 @@ h1, h2, h3, h4, button, nav a{
 	text-transform: uppercase;
 }
 h1, h2, h3, h4{
-	font-family:"Montserrat-Regular";
+	font-family:"Montserrat-Regular", Arial, sans-serif;
 	text-align: center;
 }
 h1 {
@@ -74,6 +74,7 @@ p{
 }
 
 .button_light{
+	background-color: transparent;
 	border-color: #ff6e40;
 	color: #fff;
 }
@@ -85,6 +86,24 @@ p{
 
 .button_long{
 	padding: 10px 50px;
+}
+.icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.icon,
+.icon:hover,
+.icon:visited{
+	color: #fff;
+}
+.icon_large{
+	width: 60px;
+	height: 60px;
+}
+.icon_orange {
+	background-color:  #ff6e40;
 }
 header {
 	background-color: #fff;
@@ -217,17 +236,16 @@ section h4 {
 }
 	.section_text-centered p{
 		margin-bottom: 25px;
-
 	}
 
 .service-list__item {
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 30px;
 }
 	.item__img{
 		width: 80px;
 		height: 80px;
+		margin-right: 20px;
 	}
 		.service-list__item:nth-child(1) .item__img {
 			background: url('../images/service-icons-sprite.png') -10px -10px;
@@ -248,10 +266,7 @@ section h4 {
 			background: url('../images/service-icons-sprite.png') -210px -110px;
 		}
 	.item__text{
-		flex-basis: 270px;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
+		 width: calc(100% - 100px);
 	}
 		.item__text h4{
 			text-align: left;
@@ -260,3 +275,92 @@ section h4 {
 		.item__text p {
 			line-height: 1.2;
 		}
+
+/* .subscribe, */
+.subscribe__text,
+.subscribe__button{
+	/* display: flex; */
+}
+	.subscribe{
+		/* width: 100%;
+		justify-content: space-between; */
+	}
+
+	.subscribe__text{
+		/* flex-direction: column; */
+		color: #fff;
+	}
+	.subscribe__text h4{
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	.subscribe__text h4,
+	.subscribe__text p{
+		text-align: left;
+
+	}
+	.subscribe__button{
+		text-align: right;
+	}
+
+/*-------- GALLERY SECTION --------*/
+	.gallery__item{
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.gallery__item:nth-child(3n+3){
+		margin-right: 0;
+	}
+		.gallery__item:hover .gallery__hover{
+			height: 100%;
+		}
+		.gallery__item img{
+			display: block;
+			max-width: 100%;
+		}
+
+		.gallery__hover{
+			background-color: rgba(155,155,155,0.5);
+			width: calc(100% - 30px);
+			height: 0;
+			overflow: hidden;
+			position: absolute;
+			bottom: 0;
+			left: 15px;
+			right: 0;
+			transition: .5s ease-in-out;
+		}
+			.hover__body{
+				width: 100%;
+				height: 74%;
+    		min-height: 220px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.hover__footer{
+				width: 100%;
+				height: 28%;
+				max-height: 100px;
+				background-color: #f4f4f4;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+				.hover__footer h4{
+					color: #ff6e40;
+					font-size: 18px;
+				}
+
+/* -----------CONTACT SECTION---------- */
+.contact__item{
+	display: flex;
+	align-items: center;
+}
+	.contact__item a{
+		margin-right: 15px;
+	}
+	.contact__item p{
+		width:calc(100% - 80px);
+	}
