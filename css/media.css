@@ -1,4 +1,27 @@
 @media (max-width: 767px) {
+  .hamb{
+    display:block;
+    position: absolute;
+    right: 0;
+  }
+  .header__menu{
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    right: -140px;
+    top: 10px;
+    background-color: #fff;
+    z-index: 999;
+    transition: right .5s ease-in-out;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
   .service-list__item{
     flex-direction: column;
     align-items: center;
@@ -18,8 +41,10 @@
   .item__img{
     margin-right: 0;
   }
+  .contact__title{
+    align-items: center;
+  }
   .contact__item{
     margin-top: 10px;
-
   }
 }

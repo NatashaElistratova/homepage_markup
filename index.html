@@ -10,24 +10,26 @@
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <div class="header__menu">
-        <div class="logo ">
-          <h1>layout</h1>
+      <div class="header__inner">
+        <div class="container">
+          <div class="header__menu">
+          <div class="logo ">
+            <h1>layout</h1>
+          </div>
+          <div class="hamb" id="menuIcon">&#9776;</div>
+          <nav id="nav">
+            <ul>
+              <li><a href="">about</a></li>
+              <li><a href="">services</a></li>
+              <li><a href="">our works</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="">about</a></li>
-            <li><a href="">services</a></li>
-            <li><a href="">our works</a></li>
-            <li><a href="">contact</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
     <div class="header__slider">
@@ -50,6 +52,7 @@
       </a>
     </div>
   </header>
+
   <main>
     <section class="section_light section_text-centered">
       <div class="container">
@@ -69,7 +72,6 @@
       </div>
     </section>
     <section class="section_grey section_services">
-
       <h3>Lorem ipsum</h3>
       <h2>our services</h2>
       <div class="service-list">
@@ -136,7 +138,6 @@
       </div>
     </section>
     <section class="section_dark-grey section_subscribe">
-
       <div class="container">
         <div class="row">
           <div class="subscribe__text col-md-8 col-sm-8 col-12">
@@ -156,83 +157,92 @@
       </div>
     </section>
     <section class="section_light section_gallery">
-
       <h3>Donec tristique</h3>
-
       <h2>our works</h2>
-
       <div class="gallery">
         <div class="container">
           <div class="row">
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-1.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-2.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-1.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-3.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-4.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-2.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-5.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-3.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="gallery__item col-md-4 col-sm-6 col-12">
-              <img src="images/work-6.jpg" class="gallery__img" alt="">
-              <div class="gallery__hover">
-                <div class="hover__body">
-                  <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-4.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
                 </div>
-                <div class="hover__footer">
-                  <h4>Ut pretium leo vel</h4>
-                  <p>Category</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-5.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 centering">
+              <div class="gallery__item">
+                <img src="images/work-6.jpg" class="gallery__img" alt="">
+                <div class="gallery__img_overlay">
+                  <div class="overlay__body">
+                    <a href="" class="icon icon_large icon_orange"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="overlay__footer">
+                    <h4>Ut pretium leo vel</h4>
+                    <p>Category</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,7 +255,6 @@
         <div class="row">
           <div class="contact__title col-md-3 col-sm-12">
             <h3>Donec tristique</h3>
-
             <h2>contact</h2>
           </div>
           <div class="contact__item col-md-3 col-sm-4">
@@ -253,7 +262,7 @@
               <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
             </a>
             <p>
-              2619 Old Fort Rd Washington, PA 19034
+              2619 Old Fort Rd Fort Washington, PA 19034
             </p>
           </div>
           <div class="contact__item col-md-3 col-sm-4">
@@ -278,18 +287,17 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="copyright col-md-4 col-sm-4 col-12">
+        <div class="copyright col-4">
           Copyright 2016 © Layout.02
         </div>
-        <div class="social-icons col-md-4 col-sm-4 col-12">
+        <div class="social-icons col-4">
           <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-
         </div>
-        <div class="footer__menu col-md-4 col-sm-4 col-12">
+        <div class="footer__men col-4">
           <ul>
             <li><a href="">Privacy Policy </a></li>
             <li><a href="">Terms & Conditions</a></li>
@@ -301,6 +309,5 @@
 </body>
 <script src="js/index.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPcG8JAIECjTGZbEAmi008lYUPAS9G7qA&callback=initMap&&language=en&region=US" async defer></script>
-
 
 </html>
