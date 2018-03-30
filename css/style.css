@@ -25,8 +25,9 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:visited {
   text-decoration: none;
+  color: #212121;
 }
 
 button {
@@ -123,7 +124,13 @@ header {
   background-color: #fff;
 }
 
-.header__inner{
+h1 span {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 2px solid #212121;
+}
+
+.header__inner {
   width: 100%;
   position: fixed;
   top: 0;
@@ -149,7 +156,7 @@ header {
   color: #212121;
 }
 
-.hamb{
+.hamb {
   width: 50px;
   height: 50px;
   color: #212121;
@@ -166,30 +173,40 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 15px;
+  margin-right: 22px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav a {
   font-family: "Montserrat-Regular";
 }
+
 .showNav {
   right: 0;
 }
+
 .header__slider {
+  width: 100%;
   height: 500px;
-  position: relative;
-  color: #fff;
-  overflow-x: hidden;
+  margin-top: 74px;
 }
 
-.header__slider>* {
-  position: absolute;
+.header__slider ul, .header__slider li, .header__slide {
+  width: 100%;
+  height: 100%;
+}
+
+.header__slider ul {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
 }
 
 .header__slide {
-  left: 100%;
-  width: 100%;
-  height: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,8 +216,17 @@ nav a {
   transition: left 1s ease-in-out, right 1s ease-in-out;
 }
 
-.slide_shown {
+.slide_current {
   left: 0%;
+  z-index: 5
+}
+
+.slide_prev {
+  left: -100%;
+}
+
+.slide_next {
+  left: 100%;
 }
 
 .header__slide p {
@@ -217,22 +243,26 @@ nav a {
 }
 
 .header__slide:nth-child(1) {
-  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)),
-                    url("../images/slide-1.jpg") ;
+  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)), url("../images/slide-1.jpg");
 }
 
 .header__slide:nth-child(2) {
-  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)),
-                    url("../images/slide-2.jpg");
+  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)), url("../images/slide-2.jpg");
+}
+
+.header__slide:nth-child(3) {
+  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)), url("../images/slide-1.jpg");
 }
 
 .slider__control {
+  position: absolute;
   width: 40px;
   height: 40px;
   text-align: center;
   border: 2px solid #ff6e40;
   color: #fff;
-  top: 230px;
+  top: 300px;
+  z-index: 10;
 }
 
 .slider__control:hover, .slider__control:visited {
@@ -253,6 +283,7 @@ nav a {
 }
 
 /* -----------MAIN----------------------- */
+
 section {
   padding: 100px 0;
 }
@@ -286,19 +317,29 @@ section h4 {
   text-align: center;
 }
 
-.section_text-centered p {
-  margin-bottom: 25px;
+/*-----------ABOUT SECTION --------*/
+
+.section_about h2 {
+  margin-bottom: 30px;
+}
+
+.section_about p {
+  margin-bottom: 22px;
+}
+
+.section_about button {
+  margin-top: 10px;
 }
 
 /* -------SERVICES SECTION----------	 */
 
 .section_services {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .service-list__item {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .item__img {
@@ -347,7 +388,7 @@ section h4 {
 /* -----------SUBSCRIBE SECTION------------ */
 
 .section_subscribe {
-  padding: 35px 0;
+  padding: 40px 0;
 }
 
 .subscribe__text {
@@ -371,7 +412,7 @@ section h4 {
 /*-------- GALLERY SECTION --------*/
 
 .section_gallery {
-  padding-bottom: 80px;
+  padding: 100px 0 70px;
 }
 
 .gallery__item {
@@ -381,17 +422,13 @@ section h4 {
   position: relative;
 }
 
-/* .gallery__item:nth-child(3n+3) {
-  margin-right: 0;
-} */
-
 .gallery__item:hover .gallery__img_overlay {
   height: 100%;
 }
 
 .gallery__item img {
   display: block;
-  width:100%;
+  width: 100%;
   max-width: 380px;
   margin: 0 auto;
 }
@@ -439,10 +476,12 @@ section h4 {
 .section_contact {
   padding: 40px 0;
 }
-.contact__title{
+
+.contact__title {
   display: flex;
   flex-direction: column;
 }
+
 .contact__title h2, .contact__title h3 {
   text-align: left;
   margin-bottom: 0;
@@ -469,10 +508,8 @@ section h4 {
   height: 395px;
 }
 
-.gm-style-mtc > div,
-.gmnoprint > div,
-.gm-svpc {
-  display:none;
+.gm-style-mtc>div, .gmnoprint>div, .gm-svpc {
+  display: none;
 }
 
 /* -----------FOOTER---------- */

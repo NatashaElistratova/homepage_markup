@@ -10,3 +10,7 @@
   font-family:"OpenSans-Regular";
   src:url(Open_Sans/OpenSans-Regular.ttf);
 }
+@font-face {
+  font-family:"Font-Awesome";
+  src:url(..css/font-awesome/fonts/fontawesome-webfont.svg);
+}

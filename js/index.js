@@ -2,6 +2,7 @@
 
 let menuIcon = document.getElementById('menuIcon');
 let nav = document.getElementById('nav');
+let navLinks = document.querySelectorAll('#nav ul li');
 
 menuIcon.addEventListener('click', function(){
   nav.classList.toggle('showNav');
@@ -12,34 +13,80 @@ menuIcon.addEventListener('click', function(){
 let sliderControlLeft = document.getElementById('sliderControlLeft');
 let sliderControlRight = document.getElementById('sliderControlRight');
 
-// let slide1 = document.getElementById('sliderItem1');
-// let slide2 = document.getElementById('sliderItem2');
-
 let slides = document.getElementsByClassName('header__slide');
 
 let count = 1;
-sliderControlRight.addEventListener("click", function(e){
+let prev;
+
+function slideToLeft(e){
   e.preventDefault();
+  if(prev){
+    prev.classList.remove('slide_current');
+  };
+  slides[count].classList.add('slide_current');
+  prev = slides[count];
 
-  // for(let slide of slides){
-  //   slide.classList.toggle('slide_shown');
-  // }
-
-  if(count >= slides.length){
+  if(count < slides.length-1){
+    count++;
+  }else{
     count = 0;
-  }
-  let shownSlide = document.getElementsByClassName('slide_shown')[0];
-  shownSlide.style = "left:-100%";
-  slides[count].classList.toggle('slide_shown');
+  };
+};
 
-  count++;
-});
-
-sliderControlRight.addEventListener("click", function(e){
+function slideToRight(e){
   e.preventDefault();
-});
+  if(prev){
+    prev.classList.remove('slide_current');
+  };
+  slides[count].classList.add('slide_current');
+  prev = slides[count];
+
+  if(count > 0){
+    count--;
+  }else{
+    count = slides.length-1;
+  };
+};
+
+sliderControlLeft.addEventListener("click", slideToLeft);
+
+sliderControlRight.addEventListener("click", slideToRight);
+
+
+// --------SMOOTH SCROLL
+
+let speed = 1;
+
+function smoothScroll(e){
+  e.preventDefault();
+
+  let curScroll = window.pageYOffset,
+      hash =  e.target.hash;
+      fromTop = document.querySelector(hash).getBoundingClientRect().top,
+      start = null;
+
+      requestAnimationFrame(step);
+
+      function step(time){
+        if (start === null) start = time;
+        let progress = time - start,
+            scrollY = (fromTop < 0 ? Math.max(curScroll - progress/speed, curScroll + fromTop): Math.min(curScroll + progress/speed,curScroll + fromTop));
+            window.scrollTo(0,scrollY);
+            if(scrollY != curScroll + fromTop){
+              requestAnimationFrame(step);
+            }else{
+              location.hash = hash;
+            }
+      }
+      return false;
+}
+
+for (navLink of navLinks) {
+  navLink.addEventListener('click', smoothScroll);
+}
 
 // --------GOOGLE MAP
+
 function initMap() {
   var coordinates= { lat: 38.726170, lng: -76.980943},
 
@@ -233,11 +280,12 @@ function initMap() {
             }
           ]
       },
+
       marker = new google.maps.Marker({
-            position: coordinates,
-            icon: 'http://maps.google.com/mapfiles/ms/micons/orange.png',
-            map: map
-        }),
+           position: coordinates,
+           icon: 'http://maps.google.com/mapfiles/ms/micons/orange.png',
+           map: map
+       }),
 
       map = new google.maps.Map(document.getElementById("map"), mapOptions);
       marker.setMap( map );
@@ -245,4 +293,6 @@ function initMap() {
       if( window.screen.width <= 1024){
         map.setZoom(13);
       };
+
+
 };

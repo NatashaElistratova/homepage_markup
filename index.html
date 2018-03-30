@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test markup</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/fonts.css">
@@ -14,47 +15,53 @@
 
 <body>
   <header>
-      <div class="header__inner">
-        <div class="container">
-          <div class="header__menu">
+    <div class="header__inner">
+      <div class="container">
+        <div class="header__menu">
           <div class="logo ">
-            <h1>layout</h1>
+            <h1>layout <span>2</span></h1>
           </div>
           <div class="hamb" id="menuIcon">&#9776;</div>
           <nav id="nav">
             <ul>
-              <li><a href="">about</a></li>
-              <li><a href="">services</a></li>
-              <li><a href="">our works</a></li>
-              <li><a href="">contact</a></li>
+              <li><a href="#aboutSection">about</a></li>
+              <li><a href="#serviceSection">services</a></li>
+              <li><a href="#workSection">our works</a></li>
+              <li><a href="#contactSection">contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
     <div class="header__slider">
-      <div class="header__slide slide_shown" id="sliderItem1">
-        <h2>Lorem ipsum dolor</h2>
-        <p>Aenean id ligula aliquam dolor tristique fringilla</p>
-        <button class="button button_light">start now</button>
-      </div>
-      <div class="header__slide slide_hiden" id="sliderItem2">
-        <h2>Lorem ipsum dolor</h2>
-        <p>Aenean id ligula aliquam dolor tristique fringilla</p>
-        <button class="button button_light">start now</button>
-      </div>
-
-      <a href="" class="slider__control control_right" id="sliderControlLeft">
+      <ul>
+        <li class="header__slide slide_current">
+          <h2>Lorem ipsum dolor</h2>
+          <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+          <button class="button button_light">start now</button>
+        </li>
+        <li class="header__slide">
+          <h2>Lorem ipsum dolor</h2>
+          <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+          <button class="button button_light">start now</button>
+        </li>
+        <li class="header__slide">
+          <h2>333333</h2>
+          <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+          <button class="button button_light">start now</button>
+        </li>
+      </ul>
+      <a href="" class="slider__control control_right" id="sliderControlRight">
         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
       </a>
-      <a href="" class="slider__control control_left" id="sliderControlRight">
+      <a href="" class="slider__control control_left" id="sliderControlLeft">
         <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
       </a>
     </div>
   </header>
 
   <main>
-    <section class="section_light section_text-centered">
+    <section class="section_light section_text-centered section_about" id="aboutSection">
       <div class="container">
         <h3>Donec tristique rutrum</h3>
         <h2>About company</h2>
@@ -71,7 +78,7 @@
         <button class="button button_dark">read more</button>
       </div>
     </section>
-    <section class="section_grey section_services">
+    <section class="section_grey section_services" id="serviceSection">
       <h3>Lorem ipsum</h3>
       <h2>our services</h2>
       <div class="service-list">
@@ -156,7 +163,7 @@
         </div>
       </div>
     </section>
-    <section class="section_light section_gallery">
+    <section class="section_light section_gallery" id="workSection">
       <h3>Donec tristique</h3>
       <h2>our works</h2>
       <div class="gallery">
@@ -250,7 +257,7 @@
         </div>
       </div>
     </section>
-    <section class="section_grey section_contact">
+    <section class="section_grey section_contact" id="contactSection">
       <div class="container">
         <div class="row">
           <div class="contact__title col-md-3 col-sm-12">
@@ -287,21 +294,27 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="copyright col-4">
-          Copyright 2016 © Layout.02
+        <div class="col-sm-4 col-xs-12">
+          <div class="copyright">
+            Copyright 2016 © Layout.02
+          </div>
         </div>
-        <div class="social-icons col-4">
-          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <div class="col-sm-4 col-xs-12">
+          <div class="social-icons">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
         </div>
-        <div class="footer__men col-4">
-          <ul>
-            <li><a href="">Privacy Policy </a></li>
-            <li><a href="">Terms & Conditions</a></li>
-          </ul>
+        <div class="col-sm-4 col-xs-12">
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">Privacy Policy </a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
