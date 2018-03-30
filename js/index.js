@@ -294,5 +294,4 @@ function initMap() {
         map.setZoom(13);
       };
 
-
 };

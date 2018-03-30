@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -24,10 +24,10 @@
           <div class="hamb" id="menuIcon">&#9776;</div>
           <nav id="nav">
             <ul>
-              <li><a href="#aboutSection">about</a></li>
-              <li><a href="#serviceSection">services</a></li>
-              <li><a href="#workSection">our works</a></li>
-              <li><a href="#contactSection">contact</a></li>
+              <li><a href="#aboutSection" class="link_hover-orange">about</a></li>
+              <li><a href="#serviceSection" class="link_hover-orange">services</a></li>
+              <li><a href="#workSection" class="link_hover-orange">our works</a></li>
+              <li><a href="#contactSection" class="link_hover-orange">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -45,11 +45,6 @@
           <p>Aenean id ligula aliquam dolor tristique fringilla</p>
           <button class="button button_light">start now</button>
         </li>
-        <li class="header__slide">
-          <h2>333333</h2>
-          <p>Aenean id ligula aliquam dolor tristique fringilla</p>
-          <button class="button button_light">start now</button>
-        </li>
       </ul>
       <a href="" class="slider__control control_right" id="sliderControlRight">
         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -59,7 +54,6 @@
       </a>
     </div>
   </header>
-
   <main>
     <section class="section_light section_text-centered section_about" id="aboutSection">
       <div class="container">
@@ -138,10 +132,8 @@
                 </p>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
     <section class="section_dark-grey section_subscribe">
@@ -265,7 +257,7 @@
             <h2>contact</h2>
           </div>
           <div class="contact__item col-md-3 col-sm-4">
-            <a href="" class="icon icon_large icon_orange">
+            <a href="" class="icon icon_large icon_orange link_hover-gray">
               <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
             </a>
             <p>
@@ -273,13 +265,13 @@
             </p>
           </div>
           <div class="contact__item col-md-3 col-sm-4">
-            <a href="" class="icon icon_large icon_orange">
+            <a href="" class="icon icon_large icon_orange link_hover-gray">
               <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
             </a>
             <p>610-516-0418</p>
           </div>
           <div class="contact__item  col-md-3 col-sm-4">
-            <a href="" class="icon icon_large icon_orange">
+            <a href="" class="icon icon_large icon_orange link_hover-gray">
               <i class="fa fa-at fa-2x" aria-hidden="true"></i>
             </a>
             <p>layout.02@gmail.com</p>
@@ -287,9 +279,7 @@
         </div>
       </div>
     </section>
-    <section class="section_map" id="map">
-
-    </section>
+    <section class="section_map" id="map"></section>
   </main>
   <footer>
     <div class="container">
@@ -301,26 +291,26 @@
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="social-icons">
-            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="" class="link_hover-orange"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="" class="link_hover-orange"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="" class="link_hover-orange"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="" class="link_hover-orange"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="" class="link_hover-orange"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="footer__menu">
             <ul>
-              <li><a href="">Privacy Policy </a></li>
-              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="" class="link_hover-orange">Privacy Policy </a></li>
+              <li><a href="" class="link_hover-orange">Terms & Conditions</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <script src="js/index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPcG8JAIECjTGZbEAmi008lYUPAS9G7qA&callback=initMap&&language=en&region=US" async defer></script>
 </body>
-<script src="js/index.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPcG8JAIECjTGZbEAmi008lYUPAS9G7qA&callback=initMap&&language=en&region=US" async defer></script>
 
 </html>

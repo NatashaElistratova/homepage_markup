@@ -45,6 +45,15 @@ body, a {
   font-family: "OpenSans-Regular", Arial, sans-serif;
   font-size: 16px;
   color: #616161;
+  transition: color .2s ease;
+}
+
+a.link_hover-orange:hover {
+  color: #ff6e40;
+}
+
+a.link_hover-gray:hover {
+  color: #616161;
 }
 
 h1, h2, h3, h4, button, nav a {
@@ -139,9 +148,7 @@ h1 span {
 }
 
 .header__menu {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
   height: 74px;
@@ -248,10 +255,6 @@ nav a {
 
 .header__slide:nth-child(2) {
   background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)), url("../images/slide-2.jpg");
-}
-
-.header__slide:nth-child(3) {
-  background-image: linear-gradient(to right, rgba(162, 172, 177, 0.5), rgba(162, 172, 177, 0.5)), url("../images/slide-1.jpg");
 }
 
 .slider__control {
